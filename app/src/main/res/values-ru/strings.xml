@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="app_name">Deepr</string>
+
+    <!-- Navigation and UI Labels -->
     <string name="settings">Настройки</string>
     <string name="about_us">О нас</string>
     <string name="back">Назад</string>
@@ -9,14 +12,225 @@
     <string name="cancel">Отмена</string>
     <string name="search">Поиск</string>
     <string name="create">Создать</string>
-    <string name="edit">Изменить</string>
+    <string name="edit">Редактировать</string>
     <string name="sorting">Сортировка</string>
-    <string name="qr_scanner">Сканер QR-кодов</string>
+    <string name="qr_scanner">QR-сканер</string>
     <string name="tags">Метки</string>
     <string name="all">Все</string>
     <string name="favourites">Избранное</string>
     <string name="add_to_favourites">Добавить в избранное</string>
-    <string name="remove_from_favourites">Удалить из избранного</string>
+    <string name="remove_from_favourites">Убрать из избранного</string>
     <string name="add_link">Добавить ссылку</string>
-    <string name="fetch_name_from_link">Получить название из ссылки</string>
+    <string name="fetch_name_from_link">Получить данные ссылки</string>
+    <string name="create_tag">Создать метку</string>
+    <string name="new_tag">Новая метка (необязательно)</string>
+    <string name="no_links_saved_yet">Нет сохранённых ссылок</string>
+    <string name="save_your_link_below">Сохраните ссылку ниже, чтобы быстро получить доступ к ней позже.</string>
+    <string name="no_favourites_found">Нет избранных ссылок</string>
+    <string name="no_favourites_description">Отметьте ссылки как избранные, чтобы они появились здесь.</string>
+    <string name="no_search_results">Ничего не найдено</string>
+    <string name="no_search_results_description">Попробуйте изменить поисковый запрос.</string>
+    <string name="no_links_with_tags">Нет ссылок с выбранными метками</string>
+    <string name="no_links_with_tags_description">Выберите другие метки или сбросьте фильтры.</string>
+    <string name="no_favourites_with_tags">Нет избранного в выбранных метках</string>
+    <string name="no_favourites_with_tags_description">Отметьте ссылки с этими метками как избранные или выберите другие.</string>
+    <string name="remove_thumbnail">Удалить миниатюру</string>
+
+    <!-- Menu and Dialog Items -->
+    <string name="more_options">Ещё</string>
+    <string name="copy_link">Копировать ссылку</string>
+    <string name="link_copied">Скопировано в буфер обмена</string>
+    <string name="delete">Удалить</string>
+    <string name="delete_confirmation_title">Удалить ссылку?</string>
+    <string name="delete_confirmation_message">Вы действительно хотите удалить эту ссылку?</string>
+    <string name="delete_link_confirmation_with_name">Удалить «%s»?</string>
+    <string name="remove_tag">Удалить метку</string>
+    <string name="reset_opened_count">Сбросить счётчик открытий</string>
+    <string name="failed_to_fetch_metadata">Не удалось получить данные</string>
+    <string name="opened_count">Открытий: %d</string>
+    <string name="last_opened">Последнее открытие: %s</string>
+    <string name="notes">Заметки</string>
+    <string name="view_note">Просмотреть заметку</string>
+    <string name="enter_notes">Введите заметку (необязательно)</string>
+    <string name="tags_label">Метки:</string>
+    <string name="suggestions_label">Рекомендации:</string>
+    <string name="filter">Фильтр</string>
+    <string name="home">Главная</string>
+    <string name="load_more_tags">+%d ещё</string>
+    <string name="number_tags">Метки: %d</string>
+    <string name="show_less_tags">Показать меньше</string>
+    <string name="add_shortcut">Добавить ярлык</string>
+    <string name="edit_shortcut">Редактировать ярлык</string>
+    <string name="show_qr_code">Показать QR-код</string>
+    <string name="deeplink_already_exists">Такая ссылка уже существует</string>
+
+    <!-- Sort Menu Items -->
+    <string name="sort_by_date_ascending">По дате (возрастание)</string>
+    <string name="sort_by_date_descending">По дате (убывание)</string>
+    <string name="sort_by_opened_ascending">По числу открытий (возрастание)</string>
+    <string name="sort_by_opened_descending">По числу открытий (убывание)</string>
+    <string name="sort_by_name_ascending">По названию (А–Я)</string>
+    <string name="sort_by_name_descending">По названию (Я–А)</string>
+    <string name="sort_by_link_ascending">По ссылке (A–Z)</string>
+    <string name="sort_by_link_descending">По ссылке (Z–A)</string>
+
+    <!-- Tag Management -->
+    <string name="edit_tag">Редактировать метку</string>
+    <string name="delete_tag">Удалить метку</string>
+    <string name="delete_tag_confirmation">Удалить эту метку?</string>
+    <string name="delete_tag_confirmation_with_name">Удалить метку «%s»?</string>
+    <string name="tag_name_exists">Метка с таким названием уже существует</string>
+    <string name="failed_to_edit_tag">Не удалось изменить метку</string>
+    <string name="tag_edited_successfully">Метка обновлена</string>
+    <string name="failed_to_delete_tag">Ошибка удаления метки: %s</string>
+    <string name="tag_deleted_successfully">Метка удалена</string>
+    <string name="edit_tag_description">Изменить метку</string>
+    <string name="delete_tag_description">Удалить метку</string>
+    <string name="clear_all_filters">Сбросить фильтры</string>
+    <string name="selected_tags_count">Выбрано меток: %d</string>
+
+    <!-- Settings Screen -->
+    <string name="backup">Резервная копия</string>
+    <string name="restore">Восстановить</string>
+    <string name="import_deeplinks">Импорт ссылок</string>
+    <string name="import_deeplinks_description">Импортировать ссылки из CSV-файла</string>
+    <string name="export_deeplinks">Экспорт ссылок</string>
+    <string name="export_deeplinks_description">Экспортировать ссылки в CSV-файл</string>
+    <string name="shortcut_icon">Иконка ярлыка</string>
+    <string name="use_link_app_icon">Использовать иконку приложения-источника</string>
+    <string name="use_deepr_app_icon">Использовать иконку Deepr</string>
+    <string name="shortcut_icon_setting">Выбор иконки ярлыка</string>
+    <string name="language">Язык</string>
+    <string name="language_description">Изменить язык приложения</string>
+    <string name="language_dialog_title">Выбор языка</string>
+    <string name="system_default">Системный</string>
+    <string name="english">English</string>
+    <string name="hindi">हिंदी</string>
+    <string name="spanish">Español</string>
+    <string name="french">Français</string>
+    <string name="german">Deutsch</string>
+    <string name="urdu">اردو</string>
+    <string name="default_page">Начальная страница</string>
+    <string name="default_page_all">Открывать раздел «Все ссылки»</string>
+    <string name="default_page_favourites">Открывать «Избранное»</string>
+    <string name="app_version">Версия: %s</string>
+    <string name="made_with_love">Сделано с ❤️ в Индии</string>
+
+    <!-- About Us Screen -->
+    <string name="app_logo">Логотип приложения</string>
+    <string name="version_format">Версия %s</string>
+    <string name="app_description">Простое приложение для сохранения, организации и запуска ссылок.</string>
+    <string name="author">Автор</string>
+    <string name="author_name">Yogesh Choudhary</string>
+    <string name="contributors">Участники</string>
+    <string name="contributors_thank_you">Спасибо всем участникам, которые помогают делать Deepr лучше! 🙏</string>
+    <string name="view_contributors">Показать участников</string>
+    <string name="twitter">Twitter</string>
+    <string name="github">GitHub</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="view_on_github">Открыть на GitHub</string>
+
+    <!-- Save Dialog -->
+    <string name="save_deeplink">Сохранить ссылку</string>
+    <string name="save_deeplink_message">Сохранить ссылку: %s?</string>
+    <string name="enter_link_name">Введите название ссылки (необязательно)</string>
+    <string name="enter_link_name_error">Пожалуйста, укажите название ссылки.</string>
+    <string name="save_and_execute">Сохранить и выполнить</string>
+
+    <!-- Home Screen -->
+    <string name="enter_deeplink_command">Введите ссылку</string>
+    <string name="invalid_empty_deeplink">Неверная или пустая ссылка.</string>
+
+    <!-- Error Messages -->
+    <string name="invalid_deeplink_toast">Неверная ссылка: %s</string>
+    <string name="no_data_to_export">Нет данных для экспорта.</string>
+    <string name="no_data_available_export">Нет данных для экспорта после обработки.</string>
+    <string name="export_success">Успешно экспортировано в %s</string>
+    <string name="export_failed">Не удалось создать CSV-файл.</string>
+
+    <!-- Sync Settings -->
+    <string name="sync_to_file">Синхронизация в файл (бета)</string>
+    <string name="sync_to_file_description">Автоматически синхронизировать ссылки в Markdown-файл</string>
+    <string name="select_sync_file">Выбрать файл синхронизации</string>
+    <string name="select_sync_file_description">Выберите файл для синхронизации Markdown</string>
+    <string name="sync_file_validation">Проверка формата файла</string>
+    <string name="sync_status_valid">✓ Формат файла корректный</string>
+    <string name="sync_status_invalid">⚠ Некорректный формат файла</string>
+    <string name="sync_status_no_file">Файл не выбран</string>
+    <string name="sync_now">Синхронизировать</string>
+    <string name="sync_now_description">Запустить синхронизацию вручную</string>
+    <string name="last_sync_time">Последняя синхронизация</string>
+    <string name="last_sync_time_never">Никогда</string>
+    <string name="last_sync_time_format">%s</string>
+
+    <!-- Sync Messages -->
+    <string name="sync_disabled">Синхронизация отключена</string>
+    <string name="sync_file_not_selected">Файл для синхронизации не выбран</string>
+    <string name="sync_success">Синхронизировано в %s</string>
+    <string name="sync_failed">Ошибка синхронизации: %s</string>
+    <string name="no_file_path_provided">Путь к файлу не указан</string>
+    <string name="invalid_markdown_format">Неверный формат Markdown-таблицы</string>
+    <string name="file_validation_error">Ошибка проверки файла: %s</string>
+
+    <!-- Auto Backup Settings -->
+    <string name="auto_backup">Автокопирование</string>
+    <string name="auto_backup_description">Автоматически сохранять ссылки в CSV-файл</string>
+    <string name="select_backup_location">Выбрать папку</string>
+    <string name="select_backup_location_description">Выберите папку для автоматического резервного копирования</string>
+    <string name="backup_interval">Интервал копирования</string>
+    <string name="backup_interval_description">Как часто выполнять резервное копирование</string>
+    <string name="interval_1_hour">Каждый час</string>
+    <string name="interval_6_hours">Каждые 6 часов</string>
+    <string name="interval_12_hours">Каждые 12 часов</string>
+    <string name="interval_24_hours">Каждые 24 часа (ежедневно)</string>
+    <string name="interval_7_days">Каждые 7 дней (еженедельно)</string>
+    <string name="last_backup_time">Последний бэкап</string>
+    <string name="last_backup_time_never">Никогда</string>
+    <string name="last_backup_time_format">%s</string>
+    <string name="backup_location_not_selected">Папка не выбрана</string>
+    <string name="select_interval">Выберите интервал</string>
+    <string name="backup_interval_dialog_title">Интервал резервного копирования</string>
+
+    <!-- Local Network Server -->
+    <string name="local_network_server">Локальный сервер</string>
+    <string name="local_server_running">Сервер запущен</string>
+    <string name="server_status">Статус сервера</string>
+    <string name="server_running">Сервер работает и доступен в вашей локальной сети</string>
+    <string name="server_running_tap_to_configure">Сервер работает — нажмите для настроек</string>
+    <string name="server_stopped">Сервер остановлен</string>
+    <string name="server_address">Адрес сервера</string>
+    <string name="ip_address">IP-адрес</string>
+    <string name="server_url">URL сервера</string>
+    <string name="copy">Копировать</string>
+    <string name="copied_to_clipboard">Скопировано в буфер обмена</string>
+    <string name="scan_qr_code">Сканировать QR-код</string>
+    <string name="scan_qr_code_description">Отсканируйте этот QR-код с другого устройства для доступа к серверу</string>
+    <string name="how_to_use">Как пользоваться</string>
+    <string name="local_server_instructions">1. Включите переключатель выше, чтобы запустить сервер\n2. Убедитесь, что оба устройства в одной Wi-Fi сети\n3. Используйте URL или отсканируйте QR-код с другого устройства\n4. Откройте веб-интерфейс или API для управления ссылками</string>
+    <string name="api_endpoints">API-эндпоинты</string>
+    <string name="api_endpoints_description">Доступные REST-эндпоинты для работы через API</string>
+    <string name="api_get_links">Получить все ссылки</string>
+    <string name="api_add_link">Добавить новую ссылку (JSON: {"link": "url", "name": "name"})</string>
+    <string name="api_get_tags">Получить все метки</string>
+    <string name="api_get_link_info">Получить информацию о ссылке</string>
+    <string name="api_get_server_info">Получить информацию о сервере и документацию API</string>
+    <string name="local_server_notification_channel_name">Локальный сервер</string>
+    <string name="local_server_notification_channel_description">Уведомления о работе локального сервера</string>
+    <string name="local_server_notification_text">URL сервера: %s</string>
+    <string name="local_server_starting">Запуск сервера…</string>
+    <string name="stop">Остановить</string>
+    <string name="server_port">Порт сервера</string>
+    <string name="custom_port">Пользовательский порт</string>
+    <string name="port_number">Номер порта</string>
+    <string name="default_port">По умолчанию: 8080</string>
+    <string name="port_range_hint">Введите порт (1024–65535)</string>
+    <string name="invalid_port">Некорректный номер порта. Допустимый диапазон: 1024–65535.</string>
+    <string name="port_changed_restart">Порт изменён. Перезапуск сервера…</string>
+    <string name="change_port">Изменить порт</string>
+
+    <!-- Transfer Link Server -->
+    <string name="transfer_link_server">Сервер передачи ссылок</string>
+    <string name="transfer_link_to_another_device">Передача ссылок на другое устройство (бета)</string>
+    <string name="transfer_link_server_instructions">1. Включите переключатель выше, чтобы запустить сервер\n2. Убедитесь, что оба устройства находятся в одной Wi-Fi сети\n3. Отсканируйте QR-код в разделе импорта ссылок на другом устройстве</string>
+    <string name="scan_qr_to_get_data">Сканируйте, чтобы получить ссылки с другого устройства</string>
 </resources>
